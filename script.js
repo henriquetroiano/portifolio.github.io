@@ -1,3 +1,5 @@
-import homepage from "./scripts/homepage.js"
+import personalData from "./scripts/personalData.js"
+import skills from "./scripts/skills.js"
 
-homepage();
+personalData();
+skills();

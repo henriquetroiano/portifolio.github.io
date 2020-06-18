@@ -1,0 +1,10 @@
+.skills {
+  position: absolute;
+  right: 0;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  width: 70vw;
+  top: 7vh;
+}
