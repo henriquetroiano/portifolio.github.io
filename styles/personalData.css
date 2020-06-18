@@ -16,7 +16,7 @@
   border-radius: 2rem;
   background: rgb(155, 154, 154);
   width: 20vw;
-  height: 60vh;
+  height: 70vh;
   margin: 5vh 0 0 3vw;
 }
 
@@ -28,7 +28,7 @@
   border-radius: 2rem;
   background: rgb(155, 154, 154);
   width: 40vw;
-  height: 60vh;
+  height: 70vh;
   margin: 5vh 0 0 3vw;
   z-index: 51;
 }
@@ -132,7 +132,7 @@
 #span span {
   /* border: 1px solid violet; */
   margin-right: -35px;
-  background: url("/assets/open.svg") no-repeat;
+  background: url("../assets/open.svg") no-repeat;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -143,5 +143,5 @@
 }
 
 #span.abrir span {
-  background: url("/assets/close.svg") no-repeat;
+  background: url("../assets/close.svg") no-repeat;
 }
