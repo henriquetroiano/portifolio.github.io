@@ -2,6 +2,8 @@
 @import "styles/navigation.css";
 @import "styles/personalData.css";
 @import "styles/skills.css";
+@import "styles/home.css";
+@import "styles/projects.css";
 
 /* reset css */
 
@@ -14,9 +16,24 @@
   transition: all 0.5s;
 }
 
-body {
+.display {
   background-color: rgb(53, 54, 58);
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 7vh;
+  height: auto;
+  min-height: 93vh;
+  width: 100vw;
 }
+
+
+/* define a borda vermelha abaixo do item do menu superior direito de acordo com o local que voce está. */
+.topMenu .active {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid red;
+}
+
 
 div img {
   width: 4vw;

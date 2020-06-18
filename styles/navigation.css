@@ -40,6 +40,7 @@
   justify-content: center;
   text-transform: uppercase;
   font-size: 2vh;
+  pointer-events: none;
 }
 
 .socialNetworks {
