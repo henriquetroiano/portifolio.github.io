@@ -28,6 +28,10 @@
   z-index: 0;
 }
 
+.personalData #datamobile {
+  display: none;
+}
+
 /* define a borda vermelha abaixo do item do menu superior direito de acordo com o local que voce está. */
 .topMenu .active {
   border-top: 15px solid transparent;

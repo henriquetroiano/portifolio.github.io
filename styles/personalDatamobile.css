@@ -1,0 +1,72 @@
+@media (orientation: portrait) and (max-width: 700px) {
+
+    .personalData {
+        width: 94vw;
+        height: 40vh;
+
+
+    }
+
+
+    .personalData #data {
+        display: none;
+
+    }
+
+    .personalData #datamobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .personalData #datamobile div.img {
+        margin-right: 10px;
+
+    }
+
+  
+
+    .personalData #datamobile div.img {
+        /* border: 1px solid wheat; */
+    }
+
+    .personalData #datamobile div.img img {
+        width: auto;
+        border-radius: 10px;
+    }
+
+
+
+    .personalData #datamobile div.info { 
+        /* border: 1px solid wheat; */
+        height: 35vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+    }
+
+    .personalData #datamobile div.info h2 { 
+        /* border: 1px solid wheat; */
+        font-size: 3vh;
+        
+
+    }
+
+    .personalData #datamobile div.info h3 { 
+        /* border: 1px solid wheat; */
+        font-size: 2vh;
+        font-weight: 300;
+       
+        
+
+    }
+    
+
+}
+
+
+
+

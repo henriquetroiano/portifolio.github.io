@@ -78,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
-    min-width: 23vw;
+    min-width: 10vw;
     max-width: 40vw;
     height: 6vh;
     padding: 1vh 2vw;
@@ -87,14 +87,13 @@
     left: 0;
     margin-left: 3vw;
     border-radius: 6px;
-    background: rgb(82, 82, 82);
+    background: rgb(85, 85, 85);
   }
 
   .mobileMenu span {
     content: url("../assets/openmenu.svg");
-    width: 7vw;
-    height: 50px;
-    margin-right: 2vw;
+    width: 8vw;
+    height: auto;
   }
 
   .mobileMenu p {
@@ -103,11 +102,12 @@
   }
 
   .mobileMenu.pressed {
-    background: red;
+    background: rgba(255, 0, 0, 0.555);
   }
 
   .mobileMenu.pressed span {
     content: url("../assets/closemenu.svg");
     transform: rotate(360deg);
+    width: 7vw;
   }
 }
