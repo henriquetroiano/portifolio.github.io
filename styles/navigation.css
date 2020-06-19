@@ -7,6 +7,7 @@
   justify-content: space-between;
   /* border: 1px solid white; */
   background: linear-gradient(to top, black, rgba(0, 0, 0, 0.678));
+  z-index: 2;
 }
 
 .menu {
@@ -30,6 +31,8 @@
 .menu a:hover {
   border-top: 15px solid transparent;
   border-bottom: 15px solid red;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .menu a span {
