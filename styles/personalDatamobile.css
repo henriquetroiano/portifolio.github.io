@@ -95,12 +95,10 @@
         margin-bottom: -30px;
         align-self: flex-end;
         transform: rotate(90deg);
-        pointer-events: none;
     }
 
     .personalData .info #span.active span {
         transform: rotate(270deg);
-        pointer-events: none;
 
     
     
