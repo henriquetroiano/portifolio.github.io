@@ -45,6 +45,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 3vh 0;
         
 
     }
@@ -52,6 +53,7 @@
     .personalData #datamobile div.info h2 { 
         /* border: 1px solid wheat; */
         font-size: 3vh;
+        font-weight: 400;
         
 
     }
@@ -85,15 +87,23 @@
         /* border: 1px solid wheat; */
         width: 94vw;
         height: 100vh;
+
     } 
 
     .personalData .info #span span {
         /* border: 1px solid wheat; */
+        margin-bottom: -30px;
         align-self: flex-end;
-        margin
-    
-
+        transform: rotate(90deg);
     }
+
+    .personalData .info #span.active span {
+        transform: rotate(270deg);
+    
+    
+    }
+
+
     
 
 }
