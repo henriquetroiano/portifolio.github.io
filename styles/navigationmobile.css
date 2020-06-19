@@ -94,8 +94,7 @@
     content: url("../assets/openmenu.svg");
     width: 8vw;
     height: auto;
-    pointer-events: none;
-
+    user-select: none;
   }
 
   .mobileMenu p {
@@ -111,7 +110,7 @@
     content: url("../assets/closemenu.svg");
     transform: rotate(360deg);
     width: 7vw;
-    pointer-events: none;
+    user-select: none;
 
   }
 }
