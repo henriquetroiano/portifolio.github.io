@@ -80,6 +80,8 @@
         flex-direction: row;
         /* justify-content: center; */
         align-content: flex-start;
+        z-index: 499;
+
 
     }
 
@@ -87,6 +89,7 @@
         /* border: 1px solid wheat; */
         width: 94vw;
         height: 100vh;
+        z-index: 500;
 
     } 
 
@@ -95,10 +98,14 @@
         margin-bottom: -30px;
         align-self: flex-end;
         transform: rotate(90deg);
+        z-index: 499;
+
     }
 
     .personalData .info #span.active span {
         transform: rotate(270deg);
+        z-index: 500;
+
 
     
     
