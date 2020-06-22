@@ -1,13 +1,23 @@
 @media (orientation: portrait) and (max-width: 700px) {
 
-    .personalData {
-        width: 94vw;
-        height: 40vh;
-
+    .display {
+        background-color: rgba(53, 54, 58, 0.76);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0vh;
+        height: auto;
+        min-height: auto;
+        width: 100vw;
+        z-index: 0;
 
     }
 
-
+    .personalData {
+        width: 94vw;
+        height: 40vh;
+        display: block;
+    }
 
     .personalData #data {
         display: none;
@@ -24,8 +34,6 @@
         margin-right: 10px;
 
     }
-
-  
 
     .personalData #datamobile div.img {
         /* border: 1px solid wheat; */
@@ -46,25 +54,18 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0;
-        
-
     }
 
     .personalData #datamobile div.info h2 { 
         /* border: 1px solid wheat; */
         font-size: 3vh;
         font-weight: 400;
-        
-
     }
 
     .personalData #datamobile div.info h3 { 
         /* border: 1px solid wheat; */
         font-size: 2vh;
         font-weight: 300;
-       
-        
-
     }
 
     .personalData.active {
@@ -81,8 +82,6 @@
         /* justify-content: center; */
         align-content: flex-start;
         z-index: 499;
-
-
     }
 
     .personalData .info #span.active {
@@ -90,28 +89,57 @@
         width: 94vw;
         height: 100vh;
         z-index: 500;
-
     } 
 
     .personalData .info #span span {
         /* border: 1px solid wheat; */
-        margin-bottom: -30px;
+        margin-bottom: -35px;
+        margin-left: -25px;
         align-self: flex-end;
         transform: rotate(90deg);
         z-index: 499;
-
     }
 
     .personalData .info #span.active span {
         transform: rotate(270deg);
         z-index: 500;
-
-
-    
-    
     }
 
+    .about {
+        height: auto;
+        width: 94vw;
+    } 
 
+    .personalData #resume.active  {
+        /* border: 1px solid white; */
+        margin: 3vw 0vw 30vw 0vw;
+        
+    }
+
+    .personalData #resume.active h3 {
+        /* border: 1px solid white; */
+        margin: 0;
+        width: 100%;
+        /* height: 3vh; */
+        text-align: center;
+        font-size: 6vw;
+        font-weight: 400;
+
+    }
+
+    .personalData #resume.active p {
+        /* border: 1px solid white; */
+        margin: 0;
+        width: 100%;
+        /* height: 3vh; */
+        text-align: center;
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+
+    .personalData #resume.active p + h3{
+        margin-top: 4vw;
+      }
     
 
 }
