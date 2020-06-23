@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (orientation: portrait) {
 
     .topMenu {
         height: 50px;
@@ -20,12 +20,15 @@
         cursor: pointer;
         border: none;
         border-radius: 5px;
+        
     }
 
     .topMenu #menu.active {
         background-image: url('/assets/closemenu.svg');
         background-size: 60%;
         background-color: rgb(160, 25, 25);
+        transform: rotate(90deg);
+        transition: 1s;
         
     }
 }
