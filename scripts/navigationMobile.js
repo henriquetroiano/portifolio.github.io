@@ -1,0 +1,10 @@
+export default function navigationmobile() {
+
+    function switchMenu() {
+        const topMenu = document.querySelector('.topMenu');
+        topMenu.classList.toggle('active')
+    }
+
+    const menuButton = document.querySelector('.topMenu #menu');
+    menuButton.addEventListener('click', switchMenu)
+}

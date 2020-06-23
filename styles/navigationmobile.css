@@ -4,6 +4,7 @@
         height: 50px;
         z-index: 500000000000;
     }
+
     .topMenu #menu {
         content: "";
         background-color: rgb(116, 113, 113);
@@ -20,15 +21,17 @@
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        
     }
 
-    .topMenu #menu.active {
+    .topMenu.active #menu {
         background-image: url('/assets/closemenu.svg');
         background-size: 60%;
         background-color: rgb(160, 25, 25);
         transform: rotate(90deg);
-        transition: 1s;
-        
+        transition: 0.3s;
     }
+
+
+
+    
 }
