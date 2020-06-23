@@ -5,6 +5,6 @@ export default function navigationmobile() {
         topMenu.classList.toggle('active')
     }
 
-    const menuButton = document.querySelector('.topMenu #menu');
+    const menuButton = document.querySelector('.topMenu #menuButton');
     menuButton.addEventListener('click', switchMenu)
 }

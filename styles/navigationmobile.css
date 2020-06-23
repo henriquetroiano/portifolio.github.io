@@ -5,7 +5,7 @@
         z-index: 500000000000;
     }
 
-    .topMenu #menu {
+    .topMenu #menuButton {
         content: "";
         background-color: rgb(116, 113, 113);
         background-image: url('/assets/openMenu.svg');
@@ -23,12 +23,34 @@
         border-radius: 5px;
     }
 
-    .topMenu.active #menu {
+    .topMenu.active #menuButton {
         background-image: url('/assets/closemenu.svg');
         background-size: 60%;
         background-color: rgb(160, 25, 25);
         transform: rotate(90deg);
         transition: 0.3s;
+    }
+
+    .topMenu .menu {
+        display: none;
+    }
+
+    .topMenu.active .menu {
+        background: linear-gradient(black, rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.822));
+        margin: 0;
+        padding:  10px 25px;
+        /* border: 1px solid red; */
+        border-radius: 0 0 18px 0;
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 5;
+        transition: 1s;
+        cursor: pointer;
+
     }
 
 
