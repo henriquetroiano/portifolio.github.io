@@ -10,6 +10,12 @@
   z-index: 2;
 }
 
+/* define a borda vermelha abaixo do item do menu superior direito de acordo com o local que voce está. */
+.topMenu .active {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid red;
+}
+
 .menu {
   /* border: 1px solid white; */
   position: absolute;
@@ -31,8 +37,7 @@
 .menu a:hover {
   border-top: 15px solid transparent;
   border-bottom: 15px solid red;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+
 }
 
 .menu a span {
