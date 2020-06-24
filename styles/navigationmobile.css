@@ -57,4 +57,12 @@
     transition: 1s;
     cursor: pointer;
   }
+
+  .topMenu.active .menu a {
+    pointer-events: none;
+  }
+
+  .topMenu.active .menu a span {
+    pointer-events: visible;
+  }
 }
