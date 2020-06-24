@@ -7,5 +7,5 @@ export default function navigationmobile() {
     }
 
     const menuButton = document.querySelector('.topMenu #menuButton');
-    menuButton.addEventListener('click', switchMenu)
+    menuButton.addEventListener('touchstart', switchMenu)
 }
