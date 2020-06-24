@@ -34,17 +34,12 @@
   }
 
   .topMenu .menu {
-    display: none;
-  }
-
-  .topMenu.active .menu {
     background: linear-gradient(
       black,
       rgba(0, 0, 0, 0.884),
       rgba(0, 0, 0, 0.822)
     );
     margin: 0;
-    padding: 10px 25px;
     /* border: 1px solid red; */
     border-radius: 0 0 18px 0;
     width: 45vw;
@@ -56,13 +51,22 @@
     z-index: 5;
     transition: 1s;
     cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    /* border: 1px solid white; */
   }
 
-  .topMenu.active .menu a {
+  .topMenu.active .menu {
+    height: fit-content;
+    padding: 10px 25px;
+    transition: 1s;
+  }
+
+  /* .topMenu.active .menu a {
     pointer-events: none;
   }
 
   .topMenu.active .menu a span {
     pointer-events: visible;
-  }
+  } */
 }
