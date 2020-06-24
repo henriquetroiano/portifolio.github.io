@@ -40,26 +40,22 @@
       rgba(0, 0, 0, 0.822)
     );
     margin: 0;
-    /* border: 1px solid red; */
     border-radius: 0 0 18px 0;
     width: 45vw;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: -50vh;
     left: 0;
     z-index: 5;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
-    height: 0;
     overflow: hidden;
     /* border: 1px solid white; */
   }
 
   .topMenu.active .menu {
-    height: fit-content;
-    padding: 10px 25px;
-    transition: 1s;
+    top: 70px;
   }
 
   /* .topMenu.active .menu a {
