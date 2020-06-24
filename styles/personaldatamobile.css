@@ -1,36 +1,65 @@
-.display {
-    display: flex;
-    flex-direction: column;
-}
+@media (orientation: portrait) {
 
-.personalData {
-    width: 94vw;
-    height: max-content;
-}
+    .personalData #span {
+        display: none;
+    }
 
-.personalData div#data {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-}
 
-.personalData div#data img {
-    align-self: center;
-    width: 80%;
+    .personalData #span span {
+        display: none;
+    }
 
-}
+    .personalData #arrow {
+        display: block;
+        position: relative;
+        padding: 0;
+        height: 1px;
+        width: 1px;
+        border: 1px solid black;
+        flex: 0;
+    }
 
-.personalData div#data h2 {
-    width: 80%;
-    margin: 0 10%;
-}
+    
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .personalData {
+        width: 94vw;
+        height:  max-content;
+    }
+    
+    .personalData div#data {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .personalData div#data img {
+        align-self: center;
+        width: 80%;
+    
+    }
+    
+    .personalData div#data h2 {
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+    .personalData div#data h3 {
+        /* border: 1px solid black; */
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+    .about {
+        width: 94vw;
+    }
 
-.personalData div#data h3 {
-    /* border: 1px solid black; */
-    width: 80%;
-    margin: 0 10%;
-}
 
-.about {
-    width: 94vw;
+
+
+
+
 }
