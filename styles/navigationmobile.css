@@ -1,7 +1,10 @@
 @media (orientation: portrait) {
+  .display {
+    top: 70px;
+  }
   .topMenu {
-    height: 50px;
-    z-index: 500000000000;
+    height: 70px;
+    z-index: 5;
   }
 
   .topMenu #menuButton {
@@ -11,11 +14,11 @@
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     z-index: 5;
     position: absolute;
-    top: 7px;
+    top: 10px;
     left: 15px;
     cursor: pointer;
     border: none;
@@ -44,11 +47,11 @@
     padding: 10px 25px;
     /* border: 1px solid red; */
     border-radius: 0 0 18px 0;
-    width: 25vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     z-index: 5;
     transition: 1s;
