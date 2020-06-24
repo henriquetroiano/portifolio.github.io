@@ -62,5 +62,24 @@
     left: 0;
   }
 
+  .topMenu .socialNetworks {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right:  5vw;
+    width: 50vw;
+    height: 70px;
+  }
+
+  .topMenu .socialNetworks img {
+    /* border: 1px solid white; */
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    top: 20px;
+    
+  }
+
   
 }
