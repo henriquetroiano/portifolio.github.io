@@ -4,7 +4,7 @@
   margin: 5vh 0 3vh 3vw;
   left: 0;
   background: rgb(206, 204, 204);
-  padding: 2vh 2vw 2vh 2vw;
+  padding: 2vmin 2vmin 2vmin 2vmin;
   border-top: 1rem solid black;
   border-radius: 2rem;
   width: 20vw;
@@ -66,17 +66,13 @@
   font-size: 1vw;
   width: 12vw;
   color: black;
-
 }
 
-.personalData #resume.active p + h3{
+.personalData #resume.active p + h3 {
   margin-top: 8vh;
 }
 
-
-
 .personalData #span {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,7 +89,6 @@
 .personalData #span.active {
   width: 40vw;
 }
-
 
 .personalData #span span {
   /* border: 1px solid red; */
@@ -118,7 +113,3 @@
   transition: 1s;
   transform: rotate(180deg);
 }
-
-
-
-

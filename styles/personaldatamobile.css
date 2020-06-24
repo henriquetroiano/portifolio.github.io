@@ -1,65 +1,68 @@
 @media (orientation: portrait) {
+  .personalData #span {
+    display: none;
+  }
 
-    .personalData #span {
-        display: none;
-    }
+  .personalData #span span {
+    display: none;
+  }
 
+  .personalData #arrow {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-    .personalData #span span {
-        display: none;
-    }
+    padding: 0;
+    height: max-content;
+    width: 40px;
+    /* border: 1px solid black; */
+    /* margin-bottom: -50px; */
+    align-self: center;
+    justify-content: flex-end;
+  }
 
-    .personalData #arrow {
-        display: block;
-        position: relative;
-        padding: 0;
-        height: 1px;
-        width: 1px;
-        border: 1px solid black;
-        flex: 0;
-    }
+  .personalData #arrow span {
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+    background: url("../assets/open.svg") no-repeat;
+    transform: rotate(90deg);
+    margin-bottom: -35px;
+  }
 
-    
-    .display {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .personalData {
-        width: 94vw;
-        height:  max-content;
-    }
-    
-    .personalData div#data {
-        /* border: 1px solid black; */
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .personalData div#data img {
-        align-self: center;
-        width: 80%;
-    
-    }
-    
-    .personalData div#data h2 {
-        width: 80%;
-        margin: 0 10%;
-    }
-    
-    .personalData div#data h3 {
-        /* border: 1px solid black; */
-        width: 80%;
-        margin: 0 10%;
-    }
-    
-    .about {
-        width: 94vw;
-    }
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .personalData {
+    width: 94vw;
+    height: max-content;
+  }
 
+  .personalData div#data {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
 
+  .personalData div#data img {
+    align-self: center;
+    width: 80%;
+  }
 
+  .personalData div#data h2 {
+    width: 80%;
+    margin: 0 10%;
+  }
 
+  .personalData div#data h3 {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 0 10%;
+  }
 
+  .about {
+    width: 94vw;
+  }
 }
