@@ -1,0 +1,36 @@
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+.personalData {
+    width: 94vw;
+    height: max-content;
+}
+
+.personalData div#data {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.personalData div#data img {
+    align-self: center;
+    width: 80%;
+
+}
+
+.personalData div#data h2 {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.personalData div#data h3 {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 0 10%;
+}
+
+.about {
+    width: 94vw;
+}
