@@ -18,10 +18,15 @@
 
 @keyframes loading {
     from {
-        width: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    
     }
     to {
-        width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
+
+        
 
     }
 }
