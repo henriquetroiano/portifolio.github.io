@@ -16,10 +16,13 @@ export default function personalData() {
 
     arrowbtn.addEventListener('click', function() {
         const personalData = document.querySelector('.personalData');
+        const arrowBtn = document.querySelector('#arrow span')
         const arrowContainer = document.getElementById('arrow');
 
         personalData.classList.toggle('opened')
-        arrowContainer.style.height = personalData.getClientRects(outerHeight)[0].height + "px"
+        arrowbtn.classList.toggle('opened')
+        arrowContainer.style.height = personalData.getClientRects(outerHeight)[0].height + "px";
+        
 
      
 
