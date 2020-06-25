@@ -27,8 +27,11 @@
   min-height: 93vh;
   width: 100vw;
   z-index: 0;
+  overflow: hidden;
 }
 
-div img {
-  width: 4vw;
+.none {
+  display: flex;
+  position: absolute;
+  top: -1100vh;
 }
