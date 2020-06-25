@@ -74,6 +74,7 @@
     text-align: center;
     background: forestgreen;
     border-radius: 8px;
+    color: whitesmoke;
     animation: loading 2s forwards;
   }
   

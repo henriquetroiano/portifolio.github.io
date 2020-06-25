@@ -12,6 +12,7 @@ export default function navigation() {
             const home2 = document.querySelector('.about');
             const arrow = document.querySelector('#arrow span')
             const skills = document.querySelector('.skills');
+            const loadingEffect = document.getElementsByTagName('.skills div section p')
             const allbtns = document.querySelectorAll('.menu a')
             allbtns.forEach((btn) => {
                 btn.classList.remove('active');
@@ -29,10 +30,7 @@ export default function navigation() {
                 home2.classList.add('none');
                 skills.classList.remove('none')
                 arrow.classList.add('none')
-
-
             }
-
         })
     })
 
