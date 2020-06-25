@@ -7,28 +7,32 @@
     display: none;
   }
 
-  .personalData #arrow {
+  #arrow {
     display: flex;
     flex-direction: column;
-    position: relative;
-
-    padding: 0;
-    height: max-content;
-    width: 40px;
+    position: absolute;
+    top: 10px;
+    height: 30vh;
+    width: 94vw;
     /* border: 1px solid black; */
     /* margin-bottom: -50px; */
-    align-self: center;
     justify-content: flex-end;
+    align-self: center;
   }
 
-  .personalData #arrow span {
+
+  
+  #arrow span {
     /* border: 1px solid red; */
     width: 40px;
     height: 40px;
     background: url("../assets/open.svg") no-repeat;
     transform: rotate(90deg);
-    margin-bottom: -35px;
+    margin-bottom: -25px;
+    align-self: center;
+    animation: clickMe 1s infinite;
   }
+
 
   .display {
     display: flex;
@@ -37,7 +41,17 @@
 
   .personalData {
     width: 94vw;
+    height: 30vh;
+    overflow: hidden;
+    margin: 10px 3vw 0 3vw;
+    top: 80px;
+  }
+
+  
+
+  .personalData.opened {
     height: max-content;
+    
   }
 
   .personalData div#data {
@@ -48,7 +62,7 @@
 
   .personalData div#data img {
     align-self: center;
-    width: 80%;
+    width: 60%;
   }
 
   .personalData div#data h2 {

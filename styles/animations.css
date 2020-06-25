@@ -1,0 +1,15 @@
+@keyframes clickMe {
+    0% {
+        margin-bottom: -25px;
+    }
+    25% {
+        margin-bottom: -20px;
+    }
+    50% {
+        margin-bottom: -20px;
+    }
+    100% {
+        margin-bottom: -25px;
+    }
+    
+}
