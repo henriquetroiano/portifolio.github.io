@@ -1,0 +1,66 @@
+@media (orientation: portrait) {
+  
+  .personalData {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  #arrow {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    bottom: 0;
+    height: inherit;
+
+  }
+
+  .skills div{
+    /* border: 1px solid white; */
+    width: 94vw;
+    align-self: center;
+    margin-bottom: 20px;
+    border-top: 15px solid black;
+    border-radius: 1rem;
+    background: whitesmoke;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "hability img"
+    "percentage percentage";
+  }
+
+  .skills div section {
+    border: 1px solid black;
+  }
+
+  .skills div section#img {
+    grid-area: img;
+  }
+
+  .skills div section#hability {
+    grid-area: hability;
+  }
+
+  .skills div section#percentage {
+    grid-area: percentage;
+  }
+
+  .skills div section p {
+    background: forestgreen;
+    background-position: 0 0;
+    text-align: center;
+    animation: loading 2s forwards;
+  }
+
+
+
+}
+
+

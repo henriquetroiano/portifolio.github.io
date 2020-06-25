@@ -23,7 +23,7 @@
   flex-direction: row;
   position: absolute;
   top: 7vh;
-  height: auto;
+  height: max-content;
   min-height: 93vh;
   width: 100vw;
   z-index: 0;
