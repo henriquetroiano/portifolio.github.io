@@ -34,18 +34,36 @@
     grid-template-areas: 
     "hability img"
     "percentage percentage";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
   }
 
   .skills div section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .skills div section#img {
     grid-area: img;
+    /* width: 60%; */
+
+  }
+  
+  .skills div section#img img{ 
+    width: 100%;
   }
 
   .skills div section#hability {
     grid-area: hability;
+  }
+
+  .skills div section#hability h3 {
+    font-size: 7vmin;
+    margin-bottom: 15px;
+  }
+
+  .skills div section#hability h4 {
+    font-size: 5vmin;
+    font-weight: 300;
   }
 
   .skills div section#percentage {
@@ -53,11 +71,11 @@
   }
 
   .skills div section p {
-    background: forestgreen;
-    background-position: 0 0;
     text-align: center;
-    animation: loading 2s forwards;
+    background: forestgreen;
+    border-radius: 0 8px 8px 0;
   }
+  
 
 
 
