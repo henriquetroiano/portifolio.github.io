@@ -10,6 +10,7 @@ export default function navigation() {
             event.preventDefault();
             const home1 = document.querySelector('.personalData');
             const home2 = document.querySelector('.about');
+            const arrow = document.querySelector('#arrow span')
             const skills = document.querySelector('.skills');
             const allbtns = document.querySelectorAll('.menu a')
             allbtns.forEach((btn) => {
@@ -18,14 +19,20 @@ export default function navigation() {
             button.classList.add('active')
 
             if(event.target.innerText == "HOME") {
-                skills.classList.toggle('none')
+                home1.classList.remove('none');
+                home2.classList.remove('none');
+                arrow.classList.remove('none')
+                skills.classList.add('none')
                 
             } else if(event.target.innerText == "SKILLS") {
-                home1.classList.toggle('none');
-                home2.classList.toggle('none');
+                home1.classList.add('none');
+                home2.classList.add('none');
+                skills.classList.remove('none')
+                arrow.classList.add('none')
+
+
             }
 
-            console.log(event.target.innerText == 'SKILLS')
         })
     })
 

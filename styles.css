@@ -31,7 +31,6 @@
 }
 
 .none {
-  display: flex;
-  position: absolute;
-  top: -1100vh;
+  display: none;
+
 }
