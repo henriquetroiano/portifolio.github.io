@@ -53,8 +53,10 @@ export default function navigation() {
                 home2.classList.add('none');
                 skills.classList.add('none');
                 projects.classList.add('none');
-                arrow.classList.add('none')
+                arrow.classList.add('none');
+                contact.classList.add('none');
                 courses.classList.remove('none');
+
 
             } else if(event.target.innerText == "CONTATO") { 
                 home1.classList.add('none');

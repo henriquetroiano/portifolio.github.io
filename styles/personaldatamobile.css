@@ -65,18 +65,40 @@
     flex-direction: column;
   }
 
-  
+  .personalData div#data section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    
+  }
+
+  .personalData div#data .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .personalData div#data .cards img {
+    width: 100%;
+  }
+
+  .personalData div#data .profile { 
+    padding: 8px;
+  }
+
   
 
   .personalData div#data img {
     align-self: center;
-    width: 60%;
+    width: 100%;
     margin-bottom: 0;
   }
 
   .personalData div#data h2 {
     width: 80%;
     margin: 10px 10% 0 10%;
+    font-size: 6vmin;
+    font-weight: 400;
   }
   
   .personalData div#data h3 {
@@ -84,6 +106,7 @@
     width: 80%;
     margin: 0 10%;
     font-style: italic;
+    font-size: 4.5vmin;
   }
 
   .about {
