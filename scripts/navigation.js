@@ -12,7 +12,9 @@ export default function navigation() {
             const home2 = document.querySelector('.about');
             const arrow = document.querySelector('#arrow span')
             const skills = document.querySelector('.skills');
-            const loadingEffect = document.getElementsByTagName('.skills div section p')
+            const projects = document.querySelector('.projects');
+            const courses = document.querySelector('.courses')
+            
             const allbtns = document.querySelectorAll('.menu a')
             allbtns.forEach((btn) => {
                 btn.classList.remove('active');
@@ -30,6 +32,22 @@ export default function navigation() {
                 home2.classList.add('none');
                 skills.classList.remove('none')
                 arrow.classList.add('none')
+                projects.classList.add('none');
+                courses.classList.add('none');
+
+            } else if (event.target.innerText == "PROJETOS") {
+                home1.classList.add('none');
+                home2.classList.add('none');
+                skills.classList.add('none');
+                courses.classList.add('none');
+                projects.classList.remove('none');
+
+            } else if(event.target.innerText == "CURSOS") {
+                home1.classList.add('none');
+                home2.classList.add('none');
+                skills.classList.add('none');
+                projects.classList.add('none');
+                courses.classList.remove('none');
             }
         })
     })

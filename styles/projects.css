@@ -1,3 +1,48 @@
-.projetos {
+@media (orientation: portrait) {
+  /* .personalData,
+  .display .skills,
+  .about {
     display: none;
+  } */
+
+  .projects {
+    /* border: 1px solid white; */
+    border-top: 15px solid black;
+    border-radius: 8px;
+    width: 94vw;
+    align-self: center;
+    position: relative;
+    top: 10px;
+    padding: 8px;
+    background-color: whitesmoke;
+  }
+
+  .projects #img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+  }
+
+  .projects h3 {
+    font-size: 5vmin;
+  }
+
+  .projects #description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projects #description p:first-child {
+    font-weight: 400;
+  }
+
+  .projects #description p {
+    font-size: 4.5vmin;
+    font-weight: 300;
+  }
+
+  .projects #description a {
+    font-weight: bold;
+    color: red;
+  }
 }

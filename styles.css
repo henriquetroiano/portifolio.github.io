@@ -4,6 +4,7 @@
 @import "styles/skills.css";
 @import "styles/home.css";
 @import "styles/projects.css";
+@import "styles/courses.css";
 @import "styles/animations.css";
 
 /* reset css */
@@ -32,5 +33,4 @@
 
 .display .none {
   display: none;
-
 }
