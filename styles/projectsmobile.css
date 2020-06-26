@@ -7,7 +7,6 @@
 
   .projects {
     /* border: 1px solid white; */
-    border-top: 15px solid black;
     border-radius: 8px;
     width: 94vw;
     align-self: center;
@@ -23,7 +22,15 @@
   }
 
   .projects h3 {
-    font-size: 5vmin;
+    font-size: 7vmin;
+    margin-bottom: 15px;
+    background-color: rgb(93, 95, 93);
+    border-radius: 30px 8px 30px 8px;
+    padding: 0 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-style: italic;
+    width: 70%;
   }
 
   .projects #description {
