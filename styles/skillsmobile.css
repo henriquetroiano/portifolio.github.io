@@ -25,8 +25,7 @@
     /* border: 1px solid white; */
     width: 94vw;
     align-self: center;
-    margin-bottom: 20px;
-    border-top: 15px solid black;
+    margin-bottom: 8px;
     border-radius: 1rem;
     background: whitesmoke;
     padding: 10px;
@@ -59,6 +58,13 @@
   .skills div section#hability h3 {
     font-size: 7vmin;
     margin-bottom: 15px;
+    background-color: rgb(93, 95, 93);
+    background-size: contain;
+    border-radius: 30px 8px 30px 8px;
+    padding: 0 10px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-style: italic;
   }
 
   .skills div section#hability h4 {
