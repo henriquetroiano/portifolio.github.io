@@ -32,4 +32,9 @@
     font-style: italic;
     width: max-content;
   }
+
+  .courses p {
+    font-size: 4.5vmin;
+    font-weight: 300;
+  }
 }
