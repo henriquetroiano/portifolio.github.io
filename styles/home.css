@@ -3,11 +3,19 @@
     width: 70vw;
     height: 84vh;
     margin: 5vh 2vw 3vh 3vw;
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 8px;
     background: whitesmoke;
-    border-top: 1rem solid black;
     border-radius: 2rem;
     position: relative;
     right: 0;
     flex: 1;
+}
+
+.about h2 {
+    background-color: grey;
+    border-radius: 35px 10px 35px 10px;
+    padding: 5px 15px;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 400;
 }
