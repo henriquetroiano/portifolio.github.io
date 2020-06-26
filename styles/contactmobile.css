@@ -5,6 +5,7 @@
         padding: 8px;
         margin: 8px 3vw;
         width: 94vw;
+        z-index: 50;
 
     }
 
@@ -25,12 +26,13 @@
         font-size: 4.5vmin;
         font-weight: 500;
         margin: 10px 0;
-        display: inline;
     }
 
     .contact p a {
         font-weight: 300;
         text-decoration: none;
+        cursor: pointer;
+        
 
     }
 }

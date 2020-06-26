@@ -11,6 +11,7 @@ export default function navigation() {
             const home1 = document.querySelector('.personalData');
             const home2 = document.querySelector('.about');
             const arrow = document.querySelector('#arrow span')
+            const arrow2 = document.querySelector('#arrow')
             const skills = document.querySelector('.skills');
             const projects = document.querySelector('.projects');
             const courses = document.querySelector('.courses');
@@ -61,7 +62,8 @@ export default function navigation() {
                 skills.classList.add('none');
                 projects.classList.add('none');
                 courses.classList.add('none');
-                arrow.classList.add('none')
+                arrow.classList.add('none');
+                arrow2.classList.add('none');
                 contact.classList.remove('none');
             }
         })
