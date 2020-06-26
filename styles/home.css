@@ -11,17 +11,3 @@
     flex: 1;
 }
 
-.about h2 {
-    background-color: grey;
-    border-radius: 35px 10px 35px 10px;
-    padding: 5px 15px;
-    color: whitesmoke;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 6vmin;
-}
-
-.about p {
-    font-size: 4.5vmin;
-    font-weight: 400;
-}

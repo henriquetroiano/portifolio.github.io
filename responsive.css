@@ -4,3 +4,12 @@
 @import "styles/projectsmobile.css";
 @import "styles/coursesmobile.css";
 @import "styles/contactmobile.css";
+@import "styles/homemobile.css";
+
+@media (orientation: portrait) {
+    .display .none {
+        display: none;
+      }
+
+    
+}
