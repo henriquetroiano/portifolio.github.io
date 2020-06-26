@@ -24,52 +24,89 @@ export default function navigation() {
             button.classList.add('active')
 
             if(event.target.innerText == "HOME") {
-                home1.classList.remove('none');
-                home2.classList.remove('none');
-                arrow.classList.remove('none');
-                projects.classList.add('none');
-                skills.classList.add('none');
-                courses.classList.add('none');
+                home1.classList.remove('none',  'nonedesktop');
+                home2.classList.remove('none',  'nonedesktop');
+                arrow.classList.remove('none',  'nonedesktop');
+                projects.classList.add('none',  'nonedesktop');
+                skills.classList.add('none',  'nonedesktop');
+                courses.classList.add('none',  'nonedesktop');
 
                 
             } else if(event.target.innerText == "SKILLS") {
-                home1.classList.add('none');
-                home2.classList.add('none');
-                skills.classList.remove('none')
-                arrow.classList.add('none')
-                projects.classList.add('none');
-                courses.classList.add('none');
+                home1.classList.add('none',  'nonedesktop');
+                home2.classList.add('none',  'nonedesktop');
+                skills.classList.remove('none',  'nonedesktop')
+                arrow.classList.add('none',  'nonedesktop')
+                projects.classList.add('none',  'nonedesktop');
+                courses.classList.add('none',  'nonedesktop');
 
             } else if (event.target.innerText == "PROJETOS") {
-                home1.classList.add('none');
-                home2.classList.add('none');
-                skills.classList.add('none');
-                courses.classList.add('none');
-                arrow.classList.add('none')
-                projects.classList.remove('none');
+                home1.classList.add('none',  'nonedesktop');
+                home2.classList.add('none',  'nonedesktop');
+                skills.classList.add('none',  'nonedesktop');
+                courses.classList.add('none',  'nonedesktop');
+                arrow.classList.add('none',  'nonedesktop')
+                projects.classList.remove('none',  'nonedesktop');
 
             } else if(event.target.innerText == "CURSOS") {
-                home1.classList.add('none');
-                home2.classList.add('none');
-                skills.classList.add('none');
-                projects.classList.add('none');
-                arrow.classList.add('none');
-                contact.classList.add('none');
-                courses.classList.remove('none');
+                home1.classList.add('none',  'nonedesktop');
+                home2.classList.add('none',  'nonedesktop');
+                skills.classList.add('none',  'nonedesktop');
+                projects.classList.add('none',  'nonedesktop');
+                arrow.classList.add('none',  'nonedesktop');
+                contact.classList.add('none',  'nonedesktop');
+                courses.classList.remove('none',  'nonedesktop');
 
 
             } else if(event.target.innerText == "CONTATO") { 
-                home1.classList.add('none');
-                home2.classList.add('none');
-                skills.classList.add('none');
-                projects.classList.add('none');
-                courses.classList.add('none');
-                arrow.classList.add('none');
-                arrow2.classList.add('none');
-                contact.classList.remove('none');
+                home1.classList.add('none',  'nonedesktop');
+                home2.classList.add('none',  'nonedesktop');
+                skills.classList.add('none',  'nonedesktop');
+                projects.classList.add('none',  'nonedesktop');
+                courses.classList.add('none',  'nonedesktop');
+                arrow.classList.add('none',  'nonedesktop');
+                arrow2.classList.add('none',  'nonedesktop');
+                contact.classList.remove('none',  'nonedesktop');
             }
         })
     })
+
+
+
+    function switchMenu(event) {
+        const topMenu = document.querySelector('.topMenu');
+        topMenu.classList.toggle('active')
+
+    }
+
+    const menuButton = document.querySelector('.topMenu #menuButton');
+    menuButton.addEventListener('click', switchMenu)
+
+
+    function clickIn(event) {
+        const topMenu = document.querySelector('.topMenu');
+        topMenu.classList.remove('active')
+    }
+    function clickOut(event) {
+    const menuButton = document.querySelector('.topMenu #menuButton');
+
+        console.log(event.target)
+        if(event.target != menuButton) {
+        const topMenu = document.querySelector('.topMenu');
+
+        topMenu.classList.remove('active')
+
+        }
+
+    }
+
+
+    const clickInside = document.querySelector('.topMenu .menu');
+    clickInside.addEventListener('click', clickIn);
+
+    const clickOutside = document.querySelector('body');
+    clickOutside.addEventListener('click', clickOut);
+
 
 
 }

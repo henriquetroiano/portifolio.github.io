@@ -1,6 +1,5 @@
 @media (orientation: portrait) {
-
-
+    
     .about {
         /* border: 1px solid white; */
         width: 94vw;
@@ -28,4 +27,5 @@
         font-size: 4.5vmin;
         font-weight: 400;
     }
+
 }

@@ -1,16 +1,5 @@
 @media (orientation: portrait) {
-/*   
-  .personalData {
-    display: none;
-  }
 
-  .about {
-    display: none;
-  } */
-
-  /* #arrow {
-    display: none;
-  } */
   .skills {
     display: flex;
     flex-direction: column;

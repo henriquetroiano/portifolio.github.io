@@ -1,15 +1,13 @@
+@import "styles/contactmobile.css";
+@import "styles/coursesmobile.css";
+@import "styles/homemobile.css";
 @import "styles/navigationmobile.css";
 @import "styles/personaldatamobile.css";
-@import "styles/skillsmobile.css";
 @import "styles/projectsmobile.css";
-@import "styles/coursesmobile.css";
-@import "styles/contactmobile.css";
-@import "styles/homemobile.css";
+@import "styles/skillsmobile.css";
 
 @media (orientation: portrait) {
     .display .none {
-        display: none;
-      }
-
-    
+  display: none;
+}
 }
