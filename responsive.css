@@ -143,6 +143,7 @@
   }
 
   .personalData {
+    display: flex;
     width: 94vw;
     overflow: hidden;
     height: 70vw;
@@ -187,7 +188,7 @@
   }
 
   .personalData div#data .cards img {
-    height: 100%;
+    width: 100%;
     margin-bottom: 0;
   }
 
