@@ -202,17 +202,19 @@
   }
 
   .personalData div#data h2 {
-    width: 80%;
-    margin: 10px 10% 0 10%;
+    /* border: 1px solid black; */
+
+    width: 100%;
+    margin: 15px 0 0 0;
     font-size: 6vmin;
     font-weight: 400;
   }
   
   .personalData div#data h3 {
     /* border: 1px solid black; */
-    width: 80%;
-    margin: 0 10%;
-    font-style: italic;
+    width: 100%;
+    margin: 0;
+    /* font-style: italic; */
     font-size: 4.5vmin;
     font-weight: 300;
   }
@@ -243,7 +245,7 @@
 
   .about p {
       font-size: 4.5vmin;
-      font-weight: 400;
+      font-weight: 300;
   }
 
 
@@ -326,7 +328,14 @@
   /* projects mobile page config */
 
   .projects {
-    /* border: 1px solid white; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+  }
+
+  .projects > div {
+    /* border: 1px solid red; */
     border-radius: 8px;
     width: 94vw;
     align-self: center;
@@ -334,7 +343,10 @@
     top: 10px;
     padding: 8px;
     background-color: whitesmoke;
+    margin-bottom: 10px;
   }
+
+
 
   .projects #img {
     border-radius: 8px 8px 0 0;
@@ -362,6 +374,7 @@
 
   .projects #description p:first-child {
     font-weight: 400;
+    margin-bottom: 10px;
   }
 
   .projects #description p {
@@ -371,7 +384,14 @@
 
   .projects #description a {
     font-weight: bold;
-    color: red;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: rgb(70, 180, 70);
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
   }
 
 
