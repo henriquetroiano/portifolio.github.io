@@ -398,6 +398,13 @@
   /* couses mobile page config */
 
   .courses {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+  }
+
+  .courses > div {
     width: 94vw;
     background-color: whitesmoke;
     align-self: center;
@@ -405,6 +412,7 @@
     position: relative;
     top: 10px;
     padding: 8px;
+    margin-bottom: 10px;
   }
 
   .courses img {
@@ -456,19 +464,51 @@
 
   }
 
-  .contact p {
-      font-size: 4.5vmin;
+  .contact > p {
+    /* border: 1px solid black; */
+      font-size: 16px;
       font-weight: 500;
-      margin: 10px 0;
-  }
-
-  .contact p a {
-      font-weight: 300;
-      text-decoration: none;
-      cursor: pointer;
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       
+  }
+
+  .contact > p > a {
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 10px;
+      background-color: rgb(70, 180, 70);
+      border-radius: 8px;
+      padding: 10px;
+      color: white;
+  }
+
+  .contact > p > span { 
+    /* border: 1px solid black; */
+    margin-left: -10px;
+    background-color: rgb(70, 180, 70);
+    display: flex;
+    flex-direction: row;
+    height: 39px;
+    border-radius: 0 8px 8px 0;
+    
 
   }
+
+
+
+  .contact > p > span img {
+    /* border: 1px solid red; */
+    height: 25px;
+    align-self: center;
+    margin: 0 10px;
+    
+    
+  }
+
+
 
 
   
