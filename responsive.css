@@ -1,13 +1,447 @@
-@import "styles/contactmobile.css";
-@import "styles/coursesmobile.css";
-@import "styles/homemobile.css";
-@import "styles/navigationmobile.css";
-@import "styles/personaldatamobile.css";
-@import "styles/projectsmobile.css";
-@import "styles/skillsmobile.css";
+
 
 @media (orientation: portrait) {
-    .display .none {
-  display: none;
-}
+
+
+  /* setting action to none class on mobile screen */
+  .display .none {
+      display: none;
+  }
+
+
+  /* menu mobile config */
+
+  .display {
+    top: 70px;
+  }
+  .topMenu {
+    height: 70px;
+    z-index: 5;
+  }
+
+  .topMenu.active {
+    z-index: 500;
+  }
+
+  .topMenu #menuButton {
+    content: "";
+    background-color: rgb(116, 113, 113);
+    background-image: url("../assets/openmenu.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .topMenu.active #menuButton {
+    background-image: url("../assets/closemenu.svg");
+    background-size: 60%;
+    background-color: rgb(160, 25, 25);
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+
+  .topMenu .menu {
+    background: linear-gradient(
+      black,
+      rgba(0, 0, 0, 0.884),
+      rgba(0, 0, 0, 0.822)
+    );
+    margin: 0;
+    border-radius: 0 0 18px 0;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -45vw;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    /* border: 1px solid white; */
+  }
+
+  .topMenu.active .menu {
+    left: 0;
+  }
+
+  .topMenu .socialNetworks {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right:  5vw;
+    width: 50vw;
+    height: 70px;
+  }
+
+  .topMenu .socialNetworks img {
+    /* border: 1px solid white; */
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    top: 20px;
+    
+  }
+
+
+
+
+  /* homepage mobile config */
+
+  .personalData #span {
+    display: none;
+  }
+
+  .personalData #span span {
+    display: none;
+  }
+
+  #arrow {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    height: 50vh;
+    width: 94vw;
+    /* border: 1px solid black; */
+    /* margin-bottom: -50px; */
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+
+  
+  #arrow span {
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+    background: url("../assets/open.svg") no-repeat;
+    transform: rotate(90deg);
+    margin-bottom: -25px;
+    align-self: center;
+    animation: clickMe 1s infinite;
+  }
+
+  #arrow span.opened {
+    transform: rotate(270deg);
+  }
+
+
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personalData {
+    width: 94vw;
+    overflow: hidden;
+    height: 50vh;
+    margin: 10px 3vw 8px 3vw;
+    top: 80px;
+    border-top: none;
+  }
+
+  
+
+  .personalData.opened {
+    height: max-content;
+    
+  }
+
+  .personalData div#data {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personalData div#data section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    
+  }
+
+  .personalData div#data .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .personalData div#data .cards img {
+    width: 100%;
+  }
+
+  .personalData div#data .profile { 
+    padding: 8px;
+  }
+
+  
+
+  .personalData div#data img {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .personalData div#data h2 {
+    width: 80%;
+    margin: 10px 10% 0 10%;
+    font-size: 6vmin;
+    font-weight: 400;
+  }
+  
+  .personalData div#data h3 {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 0 10%;
+    font-style: italic;
+    font-size: 4.5vmin;
+  }
+
+  .about {
+    /* border: 1px solid white; */
+    width: 94vw;
+    height: 84vh;
+    margin: 15px 2vw 3vh 3vw;
+    padding: 8px;
+    background: whitesmoke;
+    border-radius: 2rem;
+    position: relative;
+    right: 0;
+    flex: 1;
+  }
+
+  .about h2 {
+      background-color: grey;
+      border-radius: 35px 10px 35px 10px;
+      padding: 5px 15px;
+      color: whitesmoke;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 6vmin;
+  }
+
+  .about p {
+      font-size: 4.5vmin;
+      font-weight: 400;
+  }
+
+  /* skills page  mobile config */
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    bottom: 0;
+    height: inherit;
+
+  }
+
+  .skills div{
+    /* border: 1px solid white; */
+    width: 94vw;
+    align-self: center;
+    margin-bottom: 8px;
+    border-radius: 1rem;
+    background: whitesmoke;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "hability img"
+    "percentage percentage";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  /* .skills div section {
+    border: 1px solid black;
+  } */
+
+  .skills div section#img {
+    grid-area: img;
+    /* width: 60%; */
+
+  }
+  
+  .skills div section#img img{ 
+    width: 100%;
+  }
+
+  .skills div section#hability {
+    grid-area: hability;
+  }
+
+  .skills div section#hability h3 {
+    font-size: 7vmin;
+    margin-bottom: 15px;
+    background-color: rgb(93, 95, 93);
+    border-radius: 30px 8px 30px 8px;
+    padding: 0 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .skills div section#hability h4 {
+    font-size: 5vmin;
+    font-weight: 300;
+  }
+
+  .skills div section#percentage {
+    grid-area: percentage;
+  }
+
+  .skills div section p {
+    text-align: center;
+    background: forestgreen;
+    border-radius: 8px;
+    color: whitesmoke;
+    animation: loading 2s forwards;
+  }
+
+
+  /* projects mobile page config */
+
+  .projects {
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    width: 94vw;
+    align-self: center;
+    position: relative;
+    top: 10px;
+    padding: 8px;
+    background-color: whitesmoke;
+  }
+
+  .projects #img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .projects h3 {
+    font-size: 7vmin;
+    margin-bottom: 15px;
+    background-color: rgb(93, 95, 93);
+    border-radius: 30px 8px 30px 8px;
+    padding: 0 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-style: italic;
+    width: 70%;
+  }
+
+  .projects #description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projects #description p:first-child {
+    font-weight: 400;
+  }
+
+  .projects #description p {
+    font-size: 4.5vmin;
+    font-weight: 300;
+  }
+
+  .projects #description a {
+    font-weight: bold;
+    color: red;
+  }
+
+
+  /* couses mobile page config */
+
+  .courses {
+    width: 94vw;
+    background-color: whitesmoke;
+    align-self: center;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    padding: 8px;
+  }
+
+  .courses img {
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 8px;
+  }
+
+  .courses h3 {
+    font-size: 6vmin;
+    margin-bottom: 15px;
+    background-color: rgb(93, 95, 93);
+    border-radius: 30px 8px 30px 8px;
+    padding: 0 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-style: italic;
+    width: max-content;
+  }
+
+  .courses p {
+    font-size: 4.5vmin;
+    font-weight: 300;
+  }
+
+  
+
+  /* contact mobile config */
+
+    .contact {
+      background-color: whitesmoke;
+      border-radius: 8px;
+      padding: 8px;
+      margin: 8px 3vw;
+      width: 94vw;
+      z-index: 50;
+
+  }
+
+  .contact h2 {
+      font-size: 6vmin;
+      background-color: grey;
+      color: whitesmoke;
+      font-style: italic;
+      font-weight: 400;
+      border-radius: 35px 10px;
+      width: max-content;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+
+  }
+
+  .contact p {
+      font-size: 4.5vmin;
+      font-weight: 500;
+      margin: 10px 0;
+  }
+
+  .contact p a {
+      font-weight: 300;
+      text-decoration: none;
+      cursor: pointer;
+      
+
+  }
+
+
+  
+
+
+
+
 }

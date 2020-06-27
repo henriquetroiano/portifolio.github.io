@@ -30,6 +30,8 @@ export default function navigation() {
                 projects.classList.add('none',  'nonedesktop');
                 skills.classList.add('none',  'nonedesktop');
                 courses.classList.add('none',  'nonedesktop');
+                contact.classList.remove('none',  'nonedesktop');
+
 
                 
             } else if(event.target.innerText == "SKILLS") {
@@ -39,6 +41,8 @@ export default function navigation() {
                 arrow.classList.add('none',  'nonedesktop')
                 projects.classList.add('none',  'nonedesktop');
                 courses.classList.add('none',  'nonedesktop');
+                contact.classList.remove('none',  'nonedesktop');
+
 
             } else if (event.target.innerText == "PROJETOS") {
                 home1.classList.add('none',  'nonedesktop');
@@ -47,6 +51,8 @@ export default function navigation() {
                 courses.classList.add('none',  'nonedesktop');
                 arrow.classList.add('none',  'nonedesktop')
                 projects.classList.remove('none',  'nonedesktop');
+                contact.classList.remove('none',  'nonedesktop');
+
 
             } else if(event.target.innerText == "CURSOS") {
                 home1.classList.add('none',  'nonedesktop');
@@ -87,10 +93,11 @@ export default function navigation() {
         const topMenu = document.querySelector('.topMenu');
         topMenu.classList.remove('active')
     }
+
+
     function clickOut(event) {
     const menuButton = document.querySelector('.topMenu #menuButton');
 
-        console.log(event.target)
         if(event.target != menuButton) {
         const topMenu = document.querySelector('.topMenu');
 
