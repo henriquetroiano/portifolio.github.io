@@ -125,7 +125,7 @@
     /* border: 1px solid red; */
     width: 40px;
     height: 40px;
-    background: url("../assets/open.svg") no-repeat;
+    background: url("./assets/open.svg") no-repeat;
     transform: rotate(90deg);
     margin-bottom: -25px;
     align-self: center;
@@ -149,6 +149,8 @@
     margin: 10px 3vw 8px 3vw;
     top: 80px;
     border-top: none;
+    background: whitesmoke;
+    
   }
 
   
