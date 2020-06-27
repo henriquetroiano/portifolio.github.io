@@ -1,84 +1,5 @@
 export default function navigation() {
-    const btn = document.querySelectorAll('.menu a');
     
-    
-
-    btn.forEach((button) => {
-        
-
-        button.addEventListener('click', function(event) {
-            event.preventDefault();
-            const home1 = document.querySelector('.personalData');
-            const home2 = document.querySelector('.about');
-            const arrow = document.querySelector('#arrow span')
-            const arrow2 = document.querySelector('#arrow')
-            const skills = document.querySelector('.skills');
-            const projects = document.querySelector('.projects');
-            const courses = document.querySelector('.courses');
-            const contact = document.querySelector('.contact')
-            
-            const allbtns = document.querySelectorAll('.menu a')
-            allbtns.forEach((btn) => {
-                btn.classList.remove('active');
-            })
-            button.classList.add('active')
-
-            if(event.target.innerText == "HOME") {
-                home1.classList.remove('none',  'nonedesktop');
-                home2.classList.remove('none',  'nonedesktop');
-                arrow.classList.remove('none',  'nonedesktop');
-                projects.classList.add('none',  'nonedesktop');
-                skills.classList.add('none',  'nonedesktop');
-                courses.classList.add('none',  'nonedesktop');
-                contact.classList.remove('none',  'nonedesktop');
-
-
-                
-            } else if(event.target.innerText == "SKILLS") {
-                home1.classList.add('none',  'nonedesktop');
-                home2.classList.add('none',  'nonedesktop');
-                skills.classList.remove('none',  'nonedesktop')
-                arrow.classList.add('none',  'nonedesktop')
-                projects.classList.add('none',  'nonedesktop');
-                courses.classList.add('none',  'nonedesktop');
-                contact.classList.remove('none',  'nonedesktop');
-
-
-            } else if (event.target.innerText == "PROJETOS") {
-                home1.classList.add('none',  'nonedesktop');
-                home2.classList.add('none',  'nonedesktop');
-                skills.classList.add('none',  'nonedesktop');
-                courses.classList.add('none',  'nonedesktop');
-                arrow.classList.add('none',  'nonedesktop')
-                projects.classList.remove('none',  'nonedesktop');
-                contact.classList.remove('none',  'nonedesktop');
-
-
-            } else if(event.target.innerText == "CURSOS") {
-                home1.classList.add('none',  'nonedesktop');
-                home2.classList.add('none',  'nonedesktop');
-                skills.classList.add('none',  'nonedesktop');
-                projects.classList.add('none',  'nonedesktop');
-                arrow.classList.add('none',  'nonedesktop');
-                contact.classList.add('none',  'nonedesktop');
-                courses.classList.remove('none',  'nonedesktop');
-
-
-            } else if(event.target.innerText == "CONTATO") { 
-                home1.classList.add('none',  'nonedesktop');
-                home2.classList.add('none',  'nonedesktop');
-                skills.classList.add('none',  'nonedesktop');
-                projects.classList.add('none',  'nonedesktop');
-                courses.classList.add('none',  'nonedesktop');
-                arrow.classList.add('none',  'nonedesktop');
-                arrow2.classList.add('none',  'nonedesktop');
-                contact.classList.remove('none',  'nonedesktop');
-            }
-        })
-    })
-
-
-
     function switchMenu(event) {
         const topMenu = document.querySelector('.topMenu');
         topMenu.classList.toggle('active')
@@ -90,8 +11,51 @@ export default function navigation() {
 
 
     function clickIn(event) {
+        event.preventDefault();
         const topMenu = document.querySelector('.topMenu');
         topMenu.classList.remove('active')
+
+        const allbtns = document.querySelectorAll(".menu a");
+        const arrow = document.querySelector('#arrow span')
+        
+        allbtns.forEach((button) => {
+            button.classList.remove('active');
+            arrow.classList.add('none')
+            
+            const divs = document.querySelectorAll('.display > div');
+            divs.forEach((div) => {
+                div.classList.add('none', 'nonedesktop')
+            })   
+        })
+        
+        if(event.target.innerText == "HOME") {
+            event.target.classList.add('active');
+            arrow.classList.remove('none')
+            const home1 = document.querySelector('.personalData');
+            home1.classList.remove('none', 'nonedesktop');
+            const home2 = document.querySelector('.about');
+            home2.classList.remove('none', 'nonedesktop');
+
+        } else if(event.target.innerText == 'SKILLS') {
+            event.target.classList.add('active')
+            const skills = document.querySelector('.skills');
+            skills.classList.remove('none', 'nonedesktop');
+
+        } else if(event.target.innerText == 'PROJETOS') {
+            event.target.classList.add('active')
+            const projects = document.querySelector('.projects');
+            projects.classList.remove('none', 'nonedesktop');
+
+        } else if(event.target.innerText == 'CURSOS') {
+            event.target.classList.add('active')
+            const courses = document.querySelector('.courses');
+            courses.classList.remove('none', 'nonedesktop');
+
+        } else if(event.target.innerText == 'CONTATO') {
+            event.target.classList.add('active')
+            const contacts = document.querySelector('.contact');
+            contacts.classList.remove('none', 'nonedesktop')
+        }
     }
 
 
@@ -107,13 +71,10 @@ export default function navigation() {
 
     }
 
-
     const clickInside = document.querySelector('.topMenu .menu');
     clickInside.addEventListener('click', clickIn);
 
     const clickOutside = document.querySelector('body');
     clickOutside.addEventListener('click', clickOut);
-
-
 
 }
