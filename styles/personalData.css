@@ -1,7 +1,7 @@
 /* configuração da caixa de informações pessoais */
 .personalData {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin: 0 0 0 3vw;
   left: 0;
   background: whitesmoke;
@@ -19,6 +19,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2vh;
+  max-width: 18vw;
 }
 
 .personalData > #data > section > .cards > img {
@@ -26,14 +27,10 @@
   height: 50px;
   width: 50px;
   margin: 0;
-  
 }
-
 
 .personalData.active {
   width: 40vw;
-  grid-template-areas: 
-  "main extrainfo";
 }
 
 .personalData #data img {
@@ -47,26 +44,31 @@
   color: black;
   font-weight: 500;
   font-size: 1.2rem;
-  width: 16vw;
+  width: 18vw;
+  margin-top: 20px;
 }
 
 .personalData #data h3 {
   /* border: 1px solid black; */
   font-weight: 300;
   font-size: 1rem;
-  width: 12vw;
+  width: 16vw;
 }
 
 .personalData > #data > section.extrainfo {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
-@media (orientation: landscape) {
-  .personalData > #data > section.extrainfo {
-    grid-area: extrainfo;
-    display: none;
-  }
+.personalData.active > #data > section.extrainfo {
+  /* border: 1px solid black; */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 5vh;
+  left: 23vw;
+  height: 84vh;
+  width: 20vw;
+  pointer-events: none;
 }
 
 .personalData #span {

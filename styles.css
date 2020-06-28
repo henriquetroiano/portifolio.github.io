@@ -8,9 +8,6 @@
 @import "styles/projects.css";
 @import "styles/skills.css";
 
-
-
-
 /* reset css */
 
 * {
@@ -22,6 +19,10 @@
   transition: all 0.5s;
 }
 
+body {
+  background-color: rgb(53, 54, 58);
+}
+
 .display {
   background-color: rgb(53, 54, 58);
   display: flex;
@@ -29,11 +30,10 @@
   align-items: center;
   position: absolute;
   top: 7vh;
-  height: max-content;
   min-height: 93vh;
+  max-height: max-content;
   width: 100vw;
   z-index: 0;
-  overflow: hidden;
 }
 
 @media (orientation: landscape) {
@@ -41,5 +41,3 @@
     display: none;
   }
 }
-
-

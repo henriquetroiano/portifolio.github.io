@@ -1,13 +1,8 @@
-
-
 @media (orientation: portrait) {
-
-
   /* setting action to none class on mobile screen */
   .display .none {
-      display: none;
+    display: none;
   }
-
 
   /* menu mobile config */
 
@@ -79,7 +74,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    right:  5vw;
+    right: 5vw;
     width: 50vw;
     height: 70px;
   }
@@ -90,11 +85,7 @@
     width: 30px;
     margin: 0;
     top: 20px;
-    
   }
-
-
-
 
   /* homepage mobile config */
 
@@ -119,8 +110,6 @@
     align-self: center;
   }
 
-
-  
   #arrow span {
     /* border: 1px solid red; */
     width: 40px;
@@ -135,7 +124,6 @@
   #arrow span.opened {
     transform: rotate(270deg);
   }
-
 
   .display {
     display: flex;
@@ -154,14 +142,10 @@
     border-radius: 8px;
     padding: 2vw 2vw 0 2vw;
     border-bottom: 2vw solid whitesmoke;
-    
   }
-
-  
 
   .personalData.opened {
     height: max-content;
-    
   }
 
   .personalData div#data {
@@ -176,7 +160,6 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 16px;
-    
   }
 
   .personalData div#data .cards {
@@ -191,9 +174,6 @@
     width: 100%;
     margin-bottom: 0;
   }
-
-
-  
 
   .personalData div#data img {
     align-self: center;
@@ -210,7 +190,7 @@
     font-size: 6vmin;
     font-weight: 400;
   }
-  
+
   .personalData div#data h3 {
     /* border: 1px solid black; */
     width: 100%;
@@ -220,7 +200,15 @@
     font-weight: 300;
   }
 
-  .about {
+  .personalData.opened > #data > section.extrainfo {
+    left: 0;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.about {
     /* border: 1px solid white; */
     width: 94vw;
     height: 84vh;
@@ -235,36 +223,37 @@
 
   .about h2 {
     /* border: 1px solid black; */
-      background-color: grey;
-      border-radius: 35px 10px 35px 10px;
-      padding: 5px 15px;
-      color: whitesmoke;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 6vmin;
+    background-color: grey;
+    border-radius: 35px 10px 35px 10px;
+    padding: 5px 15px;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 6vmin;
   }
 
   .about p {
-      font-size: 4.5vmin;
-      font-weight: 300;
+    font-size: 4.5vmin;
+    font-weight: 300;
   }
-
-
 
   /* skills page  mobile config */
 
-  .skills {
+  div.skills {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 10px;
     bottom: 0;
     height: inherit;
-
+    width: 94vw;
+    align-self: center;
   }
 
-  .skills div{
+  div.skills div {
     /* border: 1px solid white; */
+    margin: 0;
+
     width: 94vw;
     align-self: center;
     margin-bottom: 8px;
@@ -272,32 +261,32 @@
     background: whitesmoke;
     padding: 10px;
     display: grid;
-    grid-template-areas: 
-    "hability img"
-    "percentage percentage";
+    grid-template-areas:
+      "hability img"
+      "percentage percentage";
     grid-template-columns: 2fr 1fr;
     gap: 10px;
   }
 
-  /* .skills div section {
+  /* div.skills div section {
     border: 1px solid black;
   } */
 
-  .skills div section#img {
+  div.skills div section#img {
     grid-area: img;
     /* width: 60%; */
-
-  }
-  
-  .skills div section#img img{ 
-    width: 100%;
   }
 
-  .skills div section#hability {
+  div.skills div section#img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  div.skills div section#hability {
     grid-area: hability;
   }
 
-  .skills div section#hability h3 {
+  div.skills div section#hability h3 {
     font-size: 7vmin;
     margin-bottom: 15px;
     background-color: rgb(93, 95, 93);
@@ -308,23 +297,24 @@
     font-style: italic;
   }
 
-  .skills div section#hability h4 {
+  div.skills div section#hability h4 {
     font-size: 5vmin;
     font-weight: 300;
   }
 
-  .skills div section#percentage {
+  div.skills div section#percentage {
     grid-area: percentage;
+    display: flex;
+    align-items: center;
   }
 
-  .skills div section p {
+  div.skills div section p {
     text-align: center;
     background: forestgreen;
     border-radius: 8px;
     color: whitesmoke;
     animation: loading 2s forwards;
   }
-
 
   /* projects mobile page config */
 
@@ -333,6 +323,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 0 10px 0;
+    width: 94vw;
   }
 
   .projects > div {
@@ -347,8 +338,6 @@
     margin-bottom: 10px;
   }
 
-
-
   .projects #img {
     border-radius: 8px 8px 0 0;
     width: 100%;
@@ -360,11 +349,11 @@
     margin-bottom: 15px;
     background-color: rgb(93, 95, 93);
     border-radius: 30px 8px 30px 8px;
-    padding: 0 15px;
+    padding: 0 25px;
     color: whitesmoke;
     font-weight: 400;
     font-style: italic;
-    width: 70%;
+    width: max-content;
   }
 
   .projects #description {
@@ -376,6 +365,7 @@
   .projects #description p:first-child {
     font-weight: 400;
     margin-bottom: 10px;
+    font-size: 5vmin;
   }
 
   .projects #description p {
@@ -395,7 +385,6 @@
     border-radius: 8px;
   }
 
-
   /* couses mobile page config */
 
   .courses {
@@ -403,6 +392,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 0 10px 0;
+    width: 94vw;
   }
 
   .courses > div {
@@ -438,55 +428,59 @@
     font-weight: 300;
   }
 
-  
-
   /* contact mobile config */
 
-    .contact {
-      background-color: whitesmoke;
-      border-radius: 8px;
-      padding: 8px;
-      margin: 8px 3vw;
-      width: 94vw;
-      z-index: 50;
-
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+    width: 94vw;
   }
 
-  .contact h2 {
-      font-size: 6vmin;
-      background-color: grey;
-      color: whitesmoke;
-      font-style: italic;
-      font-weight: 400;
-      border-radius: 35px 10px;
-      width: max-content;
-      padding: 5px 10px;
-      margin-bottom: 10px;
-
+  .contact > section {
+    width: 94vw;
+    background-color: whitesmoke;
+    align-self: center;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
   }
 
-  .contact > p {
+  .contact > section > h2 {
+    font-size: 6vmin;
+    background-color: grey;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 400;
+    border-radius: 35px 10px;
+    width: max-content;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact > section > p {
     /* border: 1px solid black; */
-      font-size: 16px;
-      font-weight: 500;
-      margin: 15px 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-  .contact > p > a {
-      font-weight: 500;
-      text-decoration: none;
-      margin-left: 10px;
-      background-color: rgb(70, 180, 70);
-      border-radius: 8px;
-      padding: 10px;
-      color: white;
+  .contact > section > p > a {
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: rgb(70, 180, 70);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
   }
 
-  .contact > p > span { 
+  .contact > section > p > span {
     /* border: 1px solid black; */
     margin-left: -10px;
     background-color: rgb(70, 180, 70);
@@ -494,27 +488,12 @@
     flex-direction: row;
     height: 39px;
     border-radius: 0 8px 8px 0;
-    
-
   }
 
-
-
-  .contact > p > span img {
+  .contact > section > p > span img {
     /* border: 1px solid red; */
     height: 25px;
     align-self: center;
     margin: 0 10px;
-    
-    
   }
-
-
-
-
-  
-
-
-
-
 }
