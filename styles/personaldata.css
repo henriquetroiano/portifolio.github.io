@@ -53,6 +53,7 @@
   font-weight: 300;
   font-size: 1rem;
   width: 16vw;
+  margin: 0;
 }
 
 .personalData > #data > section.extrainfo {
