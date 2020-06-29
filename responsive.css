@@ -227,6 +227,14 @@
     flex-direction: column;
   }
 
+  .personalData.opened > #data > section.extrainfo > h2 {
+    line-height: 0;
+  }
+
+  .personalData.opened > #data > section.extrainfo > h3 {
+    line-height: 0;
+  }
+
   div.about {
     /* border: 1px solid white; */
     width: 94vw;
