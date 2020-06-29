@@ -229,19 +229,16 @@
   }
 
   .personalData.opened > #data > section.extrainfo > h2 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* line-height: 0; */
     font-size: 1.3rem;
     margin: 15px 0 0 0;
-    padding: 0;
   }
 
   .personalData.opened > #data > section.extrainfo > h3 {
     /* line-height: 0; */
     font-size: 1rem;
-    border: 1px solid red;
-    margin: 0;
-    padding: 0;
+    /* border: 1px solid red; */
   }
 
   div.about {
