@@ -54,6 +54,7 @@
   font-size: 1rem;
   width: 16vw;
   margin: 0;
+  padding: 0;
 }
 
 .personalData > #data > section.extrainfo {
@@ -70,6 +71,16 @@
   height: 84vh;
   width: 20vw;
   pointer-events: none;
+}
+
+.personalData.active > #data > section.extrainfo > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.personalData.active > #data > section.extrainfo > h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .personalData #span {
