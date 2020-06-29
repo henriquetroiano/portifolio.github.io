@@ -186,12 +186,30 @@
     /* border: 1px solid black; */
 
     width: 100%;
-    margin: 15px 0 0 0;
-    font-size: 1.2rem;
+    margin-top: 15px 0 0 0;
+    font-size: 1.3rem;
     font-weight: 400;
   }
 
   .personalData div#data h3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 0;
+    /* font-style: italic; */
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .personalData.opened div#data h2 {
+    /* border: 1px solid black; */
+
+    width: 100%;
+    margin-top: 15px 0 0 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .personalData.opened div#data h3 {
     /* border: 1px solid black; */
     width: 100%;
     margin: 0;
@@ -206,16 +224,6 @@
     top: 0;
     display: flex;
     flex-direction: column;
-  }
-
-  .personalData.active > #data > section.extrainfo > h2 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .personalData.active > #data > section.extrainfo > h3 {
-    margin: 0;
-    padding: 0;
   }
 
   div.about {
