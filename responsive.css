@@ -216,7 +216,6 @@
     /* font-style: italic; */
     font-size: 1rem;
     font-weight: 300;
-    line-height: 0;
   }
 
   .personalData.opened > #data > section.extrainfo {
@@ -228,11 +227,11 @@
   }
 
   .personalData.opened > #data > section.extrainfo > h2 {
-    line-height: 0;
+    line-height: 1;
   }
 
   .personalData.opened > #data > section.extrainfo > h3 {
-    line-height: 0;
+    line-height: 1;
   }
 
   div.about {
