@@ -216,6 +216,7 @@
     /* font-style: italic; */
     font-size: 1rem;
     font-weight: 300;
+    line-height: 0;
   }
 
   .personalData.opened > #data > section.extrainfo {
